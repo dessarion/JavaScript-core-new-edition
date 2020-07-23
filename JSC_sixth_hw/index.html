@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: arial;
+            text-align: center;
+        }
+        .colors,
+        .secret,
+        .cell{
+            width: 250px;
+            height: 250px;
+            border: 3px double #888888;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .colors,
+        .secret {
+            background-color: rgb(136, 26, 136);
+        }
+        .secret {
+            font-size: 24px;
+            padding-top: 114px;
+        }
+        .containerCells {
+            display: flex;
+            width: 800px;
+            height: 250px;
+            margin: 0 auto;
+        }
+        .cell{
+            background-position: center;
+            background-size: cover;
+        }
+        .list{
+            width: 250px;
+            padding-left: 50px;
+            margin: 0 auto;
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .list li{
+            cursor: pointer;
+        }
+    </style>
+    <title>Mouse Events</title>
+</head>
+
+<body>
+
+    <h2 style="margin: 20px 0;">Task #1</h2>
+
+    <div class="colors">
+
+    </div>
+
+    <h2 style="margin: 20px 0;">Task #2</h2>
+
+    <div class="secret">
+        I have a secret!
+    </div>
+
+    <h2 style="margin: 20px 0;">Task #3</h2>
+
+    <div class="containerCells">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+
+    <h2 style="margin: 20px 0;">Task #4</h2>
+
+    <div class="list" style="margin-bottom: 50px;">
+        <ol style="list-style: number;">
+            <li>red</li>
+            <li>yellow</li>
+            <li>green</li>
+            <li>blue</li>
+            <li>orange</li>
+            <li>gray</li>
+        </ol>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
