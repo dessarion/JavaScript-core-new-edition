@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+.first_task{    
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+ul{
+    position: relative;
+    display: block;
+    width: 200px;
+    margin: 50px 0 0 50px;
+    list-style: none;
+    font-size: 2em;
+}
+ul li{
+    cursor: pointer;
+}
+ul li:hover{
+    text-shadow: 0 0 5px #000;
+    color: #fff;
+}
+.panel{
+    width: 660px;
+    height: 480px;    
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cell{
+    margin: auto auto;
+    width: 200px;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+.cell:hover{
+    box-shadow: 0px 0px 10px black;
+}
+.hidden{
+    display: none;
+}
+
+/* Second_task */
+
+.second_task{
+    padding-top: 200px;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: 100vh;    
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard,
+.display{
+    position: relative;
+    margin: 0 auto;
+    width: 1000px; 
+}
+
+.keyboard{
+    font-size: 1.2em;
+    height: 300px;    
+}
+
+.display{
+    background-color: wheat; 
+    border-radius: 15px;  
+    height: 150px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    word-wrap: break-word;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.keyboard_row{
+    height: 50px;
+    width: 980px;    
+    margin: 10px auto 0 auto; 
+    display: flex;  
+    justify-content: space-between; 
+}
+
+.keyboard_row_buttons{
+    padding: 15px 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); 
+    background-color: teal;
+}
+
+.keyboard_row_space{
+    width: 950px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75); 
+    background-color: teal;
+}
+
+.backspace,
+.capslock,
+.enter{
+    padding: 15px 4px;
+    width: 100px;
+}
+
+.tab{
+    width: 80px;
+}
+
+.shift{
+    padding: 15px 40px;
+    width: 120px;
+}
+
+.keyboard_row_buttons:active,
+.keyboard_row_space:active{    
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
