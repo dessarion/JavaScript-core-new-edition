@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Forms_iterations</title>
+</head>
+
+<body>
+    <div class="task_one">
+        <form name="move">
+            <h2>Task move</h2>
+            <input type="text" name="first_input" class="move_input">
+            <input type="button" name="move" value="move" class="move_button">
+            <input type="text" name="second_input" class="move_input">
+            <h2>Task placeholder</h2>
+            <input type="text" name="input_placeholder" class="move_input_placeholder">
+        </form>
+    </div>
+    <div class="link"><a href="#link">Second task</a></div>
+    <div class="second_task" id="link">
+
+        <div class="form_sign">
+            <span>Create your account</span>
+
+            <form name="signUp">
+
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" placeholder="First Name">
+
+                <label for="second_name">Second Name</label>
+                <input type="text" name="second_name" id="second_name" placeholder="Second Name">
+
+                <label for="email">Email adress</label>
+                <input type="text" name="email" id="email" placeholder="Email adress">
+
+
+                <input type="radio" name="radio_gender" id="man" value="man">
+                <label for="man">man</label>
+
+                <input type="radio" name="radio_gender" id="woman" value="woman">
+                <label for="woman">woman</label><br>
+
+                <label for="position">Position</label>
+                <select name="position" id="position">
+                    <option selected="selected">Choose...</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="QC/QA">QC/QA</option>
+                </select>
+
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement">I agree all statements in Terms of service</label>
+
+                <input type="button" name="signUp_button" value="Sign Up" class="signUp_button" disabled>
+
+            </form>
+
+        </div>
+
+        <div class="registrated hidden">
+            <div class="registrated_header_image">
+
+            </div>
+
+            <div class="registrated_profile_data">
+
+                <h3 class="profile_name"></h3>
+                <p class="profile_mail"></p>
+                <p class="profile_position"></p>
+
+            </div>
+
+            <div class="signOut_button">Sign Out</div>
+
+            <div class="registrated_footer">
+
+            </div>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
