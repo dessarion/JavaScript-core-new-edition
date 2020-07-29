@@ -11,6 +11,7 @@ function firstTask() {
     formsList.input_placeholder.addEventListener('blur', () => {
         if (formsList.input_placeholder.value) {
             formsList.input_placeholder.placeholder = formsList.input_placeholder.value;
+            formsList.input_placeholder.value = ''
         };
     });
 };
