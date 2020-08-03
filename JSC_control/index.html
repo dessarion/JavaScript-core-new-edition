@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Control homework</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="display container__element">
+            <h1>Some start text here</h1>
+            <p>you can edit this place!</p>
+            <p>just interact bellow.</p>
+            <p>press the "edit" button for start interaction</p>
+            <p>press the "style" button to apply CSS</p>
+        </div> <!-- display -->
+
+        <div class="buttons">
+
+            <div class="buttons__edit btn">edit</div>
+            <div class="buttons__style btn">style</div>
+
+        </div><!-- buttons -->
+
+        <div class="container__start container__element"></div><!-- start block -->
+
+        <div class="editor container__element hidden">
+
+            <textarea name="editor__textarea"></textarea>
+
+            <div class="editor__buttons">
+
+                <div class="editor__buttons--add btn">add</div>
+                <div class="editor__buttons--save btn">save</div>
+
+            </div>
+        </div> <!-- editor -->
+
+        <div class="style container__element hidden">
+            <form name="style__form">
+
+                <h2>Font size:</h2>
+                <input type="radio" name="style__form--radio" id="px12" value="12px">
+                <label for="px12">12px</label>
+                <input type="radio" name="style__form--radio" id="px14" value="14px">
+                <label for="px14">14px</label>
+                <input type="radio" name="style__form--radio" id="px16" value="16px" checked>
+                <label for="px16">16px</label>
+                <input type="radio" name="style__form--radio" id="px18" value="18px">
+                <label for="px18">18px</label>
+                <input type="radio" name="style__form--radio" id="px20" value="20px">
+                <label for="px20">20px</label>
+
+                <h2>Font family:</h2>
+                <select name="style__form--select">
+                    <option disabled selected>Choose option</option>
+                    <option value="cursive">cursive</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="monospace">monospace</option>
+                    <option value="sans-serif">sans-serif</option>
+                </select>
+
+                <h2>Colors:</h2>
+                <div class="btn__wrapper">
+                    <div class="style__form--color-font_btn btn">Color of Text</div>
+                    <div class="style__form--color-background_btn btn">Background color</div>
+                </div>
+
+                <div class="style__form--color-box hidden">                    
+                </div>
+
+                <h2>Style:</h2>
+                <input type="checkbox" name="style__form--checkbox-bold" id="bold" value="bold">
+                <label for="bold">Bold text</label>
+                <input type="checkbox" name="style__form--checkbox-italic" id="italic" value="italic">
+                <label for="italic">Cursive text</label>
+
+            </form>
+        </div><!-- style -->
+
+        <div class="add container__element hidden">
+
+            <h2>Choose what you want</h2>
+
+            <form name="add__form">
+                <input type="radio" name="add__form--radio" id="table" value="table">
+                <label for="table">table</label>
+                <input type="radio" name="add__form--radio" id="list " value="list">
+                <label for="list">list</label>
+            </form>
+
+            <div class="add__table hidden">
+
+                <form name="add__table--form">
+
+                    <span>Count TR:</span>
+                    <input type="text" name="tr" placeholder="Count TR:">
+
+                    <span>Count TD:</span>
+                    <input type="text" name="td" placeholder="Count TD:">
+
+                    <h3>Add style to your table:</h3>
+
+                    <span>Width of TD:</span>
+                    <input type="text" name="add__table--form-td_width" placeholder="Width of TD:">
+
+                    <span>Height of TD:</span>
+                    <input type="text" name="add__table--form-td_height" placeholder="Height of TD:">
+
+                    <span>Width of border:</span>
+                    <input type="text" name="add__table--form-td_border-width" placeholder="Width:">
+
+                    <span>Type of border:</span>
+                    <select name="add__table--form-td_border-type">
+                        <option value="solid">solid</option>
+                        <option value="double">double</option>
+                        <option value="groove">groove</option>
+                        <option value="dashed">dashed</option>
+
+                    </select>
+
+                    <span>Color of border:</span>
+                    <select name="add__table--form-td_border-color">
+                        <option value="black">black</option>
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                    </select>
+
+                </form>
+
+                <div class="add__table--create-btn btn">Create table</div>
+
+            </div><!-- add__table -->
+
+            <div class="add__list hidden">
+
+                <form name="add__list--form">
+
+                    <span>Count Li:</span>
+                    <input type="text" name="add__list--form-li_count" placeholder="Count Li:">
+
+                    <span>Type of marks:</span>
+                    <select name="add__list--form-li_marks-type">
+                        <option value="circle">circle</option>
+                        <option value="square">square</option>
+                        <option value="disc">disc</option>
+                    </select>
+
+                </form>
+
+                <div class="add__list--create-btn btn">Create list</div>
+
+            </div><!-- add__list -->
+
+        </div><!-- add -->
+
+
+
+    </div> <!-- container -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.display{
+    overflow-y: auto;
+}
+
+.container{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.container__element{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #d1e0e2;
+    margin: 20px 0 20px 0;
+}
+
+.buttons{    
+    width: 230px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    cursor: pointer;
+    font-weight: bold;
+    border: 3px solid #82b7be;  
+    width: 100px;
+    height: 45px;
+    padding-top: 10px;
+    border-radius: 5px;
+    text-align: center;  
+    transition: all .1s;   
+}
+
+.btn:hover{
+    border: 3px double #21acbe;    
+    box-shadow: 1px 1px 3px 0px #000;
+}
+
+.btn:active{
+    box-shadow:none;
+    border: 3px solid #82b7be;    
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 250px;
+    padding: 20px;    
+}
+
+.editor__buttons{
+    margin-top: 15px;
+    display: flex;
+}
+
+.editor__buttons--add{
+    margin-right: 30px;
+}
+
+.btn__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 330px;    
+}
+
+.style{    
+    position: relative;
+}
+
+.style .btn{
+    width: 150px;
+}
+
+.style h2{
+    font-size: 20px;
+    margin: 20px 0 5px 0;    
+}
+
+.style select{
+    width: 25%;
+    padding: 5px;
+    border-radius: 5px; 
+}
+
+.style__form--color-box{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;    
+    width: 300px;
+    height: 300px;
+    top: 25px;
+    right: 25px;
+}
+
+.add{
+    height: 400px;
+}
+
+.add h2{
+    font-size: 24px;
+    margin: 5px 0 15px 0;
+}
+
+.add h3{
+    font-size: 18px;
+    margin: 5px 0 10px 0;
+}
+
+.add label:nth-of-type(1){    
+    margin-right: 30px;    
+}
+
+.add__table{    
+    margin-top: 10px;    
+}
+
+.add__table span,
+.add__list span{
+    margin: 6px 0;
+    padding: 5px 5px 5px 0;
+    display: inline-block;
+    width: 29%;    
+}
+
+.add__table input,
+.add__list input,
+.add__list select{
+    padding: 5px;
+    width: 70%;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.add__table input:nth-of-type(5){
+    width: 10%;
+}
+
+.add__table span:nth-of-type(6),
+.add__table span:nth-of-type(7){    
+    width: 15%;
+}
+
+.add__table select{
+    width: 13.9%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.add__table .btn,
+.add__list .btn{
+    width: 150px;
+}
+
+.add__table input:focus,
+.add__table select:focus,
+.add__list input:focus,
+.add__list select:focus{
+    border-color: #21acbe;
+}
+
+.add__list span{
+    margin: 10px 0;
+}
+
+.add__list{
+    margin-top: 50px;
+}
+
+.add__list .btn{
+    margin-top: 100px;
+}
+
+/* javascript interaction styles */
+
+.hidden{
+    display: none;
+}
+
+.style__form--color-box_cell{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;    
+}
+
+.style__form--color-box_cell:hover{
+    box-shadow: 0px 0px 10px 0px #000;
+    border-radius: 5px;
+}
+
+.style__form--color-box_cell:active{
+    box-shadow: inset 0px 0px 5px 0px #000;
+    border-radius: 0px;
+}
+ table{
+     border-collapse: collapse;
+ }
+
+ ul{
+     list-style-position: inside;
+ }
