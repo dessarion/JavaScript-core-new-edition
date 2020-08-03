@@ -1,7 +1,8 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     outline: none;
 }
 
@@ -30,8 +31,12 @@ body{
 .buttons{    
     width: 230px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .btn{
@@ -43,16 +48,20 @@ body{
     padding-top: 10px;
     border-radius: 5px;
     text-align: center;  
+    -webkit-transition: all .1s;  
+    -o-transition: all .1s;  
     transition: all .1s;   
 }
 
 .btn:hover{
     border: 3px double #21acbe;    
-    box-shadow: 1px 1px 3px 0px #000;
+    -webkit-box-shadow: 1px 1px 3px 0px #000;    
+            box-shadow: 1px 1px 3px 0px #000;
 }
 
 .btn:active{
-    box-shadow:none;
+    -webkit-box-shadow:none;
+            box-shadow:none;
     border: 3px solid #82b7be;    
 }
 
@@ -65,6 +74,8 @@ textarea{
 
 .editor__buttons{
     margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -73,8 +84,12 @@ textarea{
 }
 
 .btn__wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 330px;    
 }
 
@@ -99,8 +114,11 @@ textarea{
 
 .style__form--color-box{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;    
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;    
     width: 300px;
     height: 300px;
     top: 25px;
@@ -199,12 +217,14 @@ textarea{
 }
 
 .style__form--color-box_cell:hover{
-    box-shadow: 0px 0px 10px 0px #000;
+    -webkit-box-shadow: 0px 0px 10px 0px #000;
+            box-shadow: 0px 0px 10px 0px #000;
     border-radius: 5px;
 }
 
 .style__form--color-box_cell:active{
-    box-shadow: inset 0px 0px 5px 0px #000;
+    -webkit-box-shadow: inset 0px 0px 5px 0px #000;
+            box-shadow: inset 0px 0px 5px 0px #000;
     border-radius: 0px;
 }
  table{
