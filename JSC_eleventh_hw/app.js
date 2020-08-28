@@ -92,6 +92,6 @@ console.groupEnd()
 
 const filteredAndSquared = arrFive
                                 .filter(item => item > 0)
-                                .map(item => item ** 2)
+                                .map(item => Math.sqrt(item))
 
 console.log('Task #7 => ', filteredAndSquared);
