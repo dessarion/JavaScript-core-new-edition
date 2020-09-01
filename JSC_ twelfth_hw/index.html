@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homework #12</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Please sign in</h2>
+        <form>
+            <input type="text" name="first-name" placeholder="First name">
+            <input type="text" name="last-name" placeholder="Last name">
+            <input type="text" name="email" placeholder="Email adress">
+            <input type="password" name="password" id="" placeholder="Password">
+            <div class="checkbox">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement">I agree with Privacy Policy</label>
+            </div>
+            <input type="button" value="Sign Up" name="submit" disabled>
+        </form>
+    </div>
+    <div class="pop-up hidden">
+        <div class="pop-up_top">
+            <span class="material-icons">
+                check_circle_outline
+            </span>
+        </div>
+        <h2>Great!</h2>
+        <p>Your account has been created successfully</p>
+        <div class="pop-up_button">Start Exploring
+            <span class="material-icons">
+                arrow_forward
+            </span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

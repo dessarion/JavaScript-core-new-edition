@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-size: 2.7rem;
+}
+
+.container{
+    margin: 50px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+input{
+    border-radius: 5px;
+    width: 350px;
+    margin-bottom: 25px;
+    height: 40px;
+    padding: 8px;
+    font-size: 0.9rem;
+    border-style: none;
+    border: 1px solid #ccc;
+}
+
+input:focus{
+    border: 3px solid #517bc9;
+}
+
+input[type="button"]{
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #517bc9;
+}
+
+input[type="button"]:hover{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+input[type="button"]:active{
+    box-shadow: none;
+}
+
+#agreement{
+    width: 15px;    
+}
+
+.checkbox{
+    position: relative;
+    display: flex;
+    padding-top: 5px;
+}
+
+label{
+    font-size: 1.2rem;
+    position: absolute;
+    margin: 6px 0 0 28px;
+    letter-spacing: 1px;
+}
+
+/* Pop up window */
+
+.pop-up{
+    border-radius: 5px;
+    top: 45px;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin: 0 auto;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.pop-up_top span{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.pop-up_top .material-icons{
+    font-size: 180px;
+}
+
+.pop-up h2{
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.pop-up_top{
+    background-color: #51b1c2;
+    width: 100%;
+    height: 180px;
+}
+
+.pop-up_button{
+    cursor: pointer;
+    display: flex;
+    padding: 5px 15px 5px 45px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #ffc832;
+    width: 200px;
+    height: 35px;
+}
+
+.pop-up_button:hover{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.pop-up_button:active{
+    box-shadow: none;
+}
+
+/* JavaScript styles */
+
+.hidden {
+    display: none;
+}
+
+.bg {
+    background-color: #ccc;
+}
