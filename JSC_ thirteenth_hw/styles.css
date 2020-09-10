@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 150px auto;
+}
+
+/* form input */
+
+.form-input{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+
+.form-input input{
+    padding: 8px;
+    width: 99%;
+    margin: 10px 0;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline-style: none;
+}
+
+.form-input input:focus{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+label{
+    font-size: 1.5em;
+}
+
+.form-input_btn,
+.form-edit_btn{
+    transition: all .1s;
+    font-size: 1.2em;
+    text-align: center;
+    color: green;
+    cursor: pointer;
+    padding-top: 10px;
+    width: 100px;
+    height: 50px;
+    border: 1px solid green;
+    border-radius: 5px;
+}
+
+.form-input_btn:hover,
+.form-edit_btn:hover{
+    box-shadow: 0px 0px 0px 3px rgba(0, 255, 0, 0.7);
+}
+
+.form-input_btn:active,
+.form-edit_btn:active{
+    box-shadow: none;
+}
+
+/* display items */
+
+.form-display{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 49%; 
+}
+
+.form-display_header,
+.form-dispay_item{
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.form-display_header{
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-display_header div,
+.form-dispay_item div{
+    padding: 5px;
+    width: 18%;
+    text-align: center;
+}
+
+.form-display_header div:first-child,
+.form-dispay_item div:first-child{
+    width: 5%;
+}
+
+.form-dispay_item{
+    padding-top: 5px;
+}
+
+.edit-btn,
+.delete-btn{
+    transition: all .1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn{
+    background-color: orange;
+}
+
+.edit-btn:hover{
+    box-shadow: 0px 0px 3px 3px rgb(255, 165, 0, .5); 
+}
+
+.delete-btn{
+    color: #fff;
+    background-color: salmon;
+}
+
+.delete-btn:hover{
+    box-shadow: 0px 0px 3px 3px rgb(250, 128, 114, .5); 
+}
+
+.edit-btn:active,
+.delete-btn:active{
+    box-shadow: none;    
+}
+
+/* javascript */
+
+.hidden{
+    display: none;
+}
