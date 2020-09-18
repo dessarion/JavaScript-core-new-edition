@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 150px auto 0;
+            width: 776px;
+            height: 162px;
+            border: 3px double #ccc;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container-box {
+            width: 150px;
+            height: 150px;  
+            position: relative;          
+        }
+
+        
+
+        .container-box_img{
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            right: 0;
+        }
+
+        .container-box:nth-of-type(1) .container-box_img {
+            background-color: #c1e2fd;
+        }
+
+        .container-box:nth-of-type(2) .container-box_img{
+            background-color: #8bcbff;
+        }
+
+        .container-box:nth-of-type(3) .container-box_img {
+            background-color: #5db6ff;
+        }
+
+        .container-box:nth-of-type(4) .container-box_img {
+            background-color: #269dff;
+        }
+
+        .container-box:nth-of-type(5) .container-box_img {
+            background-color: #008cff;
+        }        
+
+        .bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+            z-index: -1;
+        }
+    </style>
+    <title>Animate Galery</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="container-box">
+            <div class="container-box_img"></div>
+        </div>
+        <div class="container-box">
+            <div class="container-box_img"></div>
+        </div>
+        <div class="container-box">
+            <div class="container-box_img"></div>
+        </div>
+        <div class="container-box">
+            <div class="container-box_img"></div>
+        </div>
+        <div class="container-box">
+            <div class="container-box_img"></div>
+        </div>
+    </div>
+
+    <div class="bg"></div>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="third_script.js"></script>
+</body>
+</html>
