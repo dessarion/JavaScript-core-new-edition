@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --cell-width: 88px;
+    --cell-height: 88px
+}
+
+.game-container {
+    width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.game-container_panel {
+    width: 800px;
+    height: 30vh;
+}
+
+.panel-timer {
+    width: 800px;
+    height: 18vh;
+    font-size: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-buttons {
+    width: 800px;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 120px;
+    padding: 8px;
+    margin: 0 16px 0;
+    color: #fff;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ff2b2b;
+}
+
+.game-container_displays {
+    width: 800px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displays-puzzle,
+.displays-solution {    
+    width: 352px;
+    height: 352px;
+    box-shadow: 0 0 20px 0 #ccc;
+}
+
+.displays-solution,
+.displays-puzzle {
+    display: grid;
+    grid-template-columns: 88px 88px 88px 88px;
+    grid-template-rows: 88px 88px 88px 88px;
+    gap: 0px 0px;
+    grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
+}
+
+.displays-puzzle {
+    margin-right: 40px;
+    position: relative;
+}
+
+/* modal */
+
+.modal-window {
+    background-color: #fff;
+    position: absolute;
+    width: 600px;
+    height: 25vh;
+    margin: 0 auto;
+    top: 10vh;
+    right: 0;
+    left: 0;
+    border-radius: 15px;
+    z-index: 4;
+}
+
+.modal-window_messages {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.modal-window_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-window_buttons .btn:nth-of-type(2) {
+    background-color: #008000;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ccccccc5;
+    z-index: 3;
+}
+
+/* java script */
+
+.hidden {
+    display: none;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+/* puzzle */
+
+.displays-puzzle_item {
+    width: var(--cell-width);
+    height: var(--cell-height);
+}
+
+.displays-puzzle_item[data-idx="1"] {
+    background-image: url('mandala.png');
+    background-position: 352px 0;
+}
+
+.displays-puzzle_item[data-idx="2"] {
+    background-image: url('mandala.png');
+    background-position: 264px 0;
+}
+
+.displays-puzzle_item[data-idx="3"] {
+    background-image: url('mandala.png');
+    background-position: 176px 0;
+}
+
+.displays-puzzle_item[data-idx="4"] {
+    background-image: url('mandala.png');
+    background-position: 88px 0;
+}
+
+.displays-puzzle_item[data-idx="5"] {
+    background-image: url('mandala.png');
+    background-position: 352px 264px;
+}
+
+.displays-puzzle_item[data-idx="6"] {
+    background-image: url('mandala.png');
+    background-position: 264px 264px;
+}
+
+.displays-puzzle_item[data-idx="7"] {
+    background-image: url('mandala.png');
+    background-position: 176px 264px;
+}
+
+.displays-puzzle_item[data-idx="8"] {
+    background-image: url('mandala.png');
+    background-position: 88px 264px;
+}
+
+.displays-puzzle_item[data-idx="9"] {
+    background-image: url('mandala.png');
+    background-position: 352px 176px;
+}
+
+.displays-puzzle_item[data-idx="10"] {
+    background-image: url('mandala.png');
+    background-position: 264px 176px;
+}
+
+.displays-puzzle_item[data-idx="11"] {
+    background-image: url('mandala.png');
+    background-position: 176px 176px;
+}
+
+.displays-puzzle_item[data-idx="12"] {
+    background-image: url('mandala.png');
+    background-position: 88px 176px;
+}
+
+.displays-puzzle_item[data-idx="13"] {
+    background-image: url('mandala.png');
+    background-position: 352px 88px;
+}
+
+.displays-puzzle_item[data-idx="14"] {
+    background-image: url('mandala.png');
+    background-position: 264px 88px;
+}
+
+.displays-puzzle_item[data-idx="15"] {
+    background-image: url('mandala.png');
+    background-position: 176px 88px;
+}
+
+.displays-puzzle_item[data-idx="16"] {
+    background-image: url('mandala.png');
+    background-position: 88px 88px;
+}
